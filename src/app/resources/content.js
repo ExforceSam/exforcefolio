@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Exforce',
+    lastName:  'Sam',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'Web Developer and DevOps',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Dhaka',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+    languages: ['English', 'Bengali']  // optional: Leave the array empty if you don't want to display languages
 }
 
 const newsletter = {
@@ -34,12 +34,12 @@ const social = [
     {
         name: 'X',
         icon: 'x',
-        link: '',
+        link: 'https://x.com/exforcesam/',
     },
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:exforcesam@gmail.com',
     },
 ]
 
@@ -47,8 +47,8 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>Web Developer, DevOps, Android Developer.</>,
+    subline: <>I'm Sam, a Web Developer, DevOps, Android Developer at <InlineCode>N4ZT DEV</InlineCode>, where I craft intuitive<br/> web apps and android apps. After hours, I build my own projects.</>
 }
 
 const about = {
@@ -69,19 +69,19 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Sam is a BD based web and android Developer. Also an DevOps, database specialist.</>
     },
     work: {
         display: true, // set to false to hide this section
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'N4ZT Global',
+                timeframe: '2023 - Present',
+                role: 'Founder and Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Redesigned the core workflows platform.</>,
+                    <>With a commitment to customer satisfaction, the company has built strong, long-lasting relationships with clients, ensuring repeat business and referrals. N4ZT Global’s talented team of developers and designers continuously strive to exceed client expectations, solidifying its reputation as a trusted leader in the software development space.</>
                 ],
                 images: [ // optional: leave the array empty if you don't want to display images
                     {
@@ -93,9 +93,9 @@ const about = {
                 ]
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'Sam tech',
+                timeframe: '2021 - 2025',
+                role: 'Lead Developer',
                 achievements: [
                     <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
                     <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
@@ -109,12 +109,12 @@ const about = {
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
+                name: 'Stamford University Bangladesh',
+                description: <>Studied Bachelor of business administration.</>,
             },
             {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'City Corp College',
+                description: <>Studied interemidiet Business Studies.</>,
             }
         ]
     },
@@ -123,8 +123,8 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+                title: 'HTML5, CSS3, JavaScript',
+                description: <>Able to build & develop interactive webpages.</>,
                 // optional: leave the array empty if you don't want to display images
                 images: [
                     {
@@ -160,14 +160,14 @@ const about = {
 
 const blog = {
     label: 'Blog',
-    title: 'Writing about design and tech...',
+    title: 'Writing about web news and tech...',
     description: `Read what ${person.name} has been up to recently`
     // Create new blog posts by adding a new .mdx file to app/blog/posts
     // All posts will be listed on the /blog route
 }
 
 const work = {
-    label: 'Work',
+    label: 'Work & tools',
     title: 'My projects',
     description: `Design and dev projects by ${person.name}`
     // Create new project pages by adding a new .mdx file to app/blog/posts
